@@ -1,0 +1,304 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#letra {
+    font-family: "Playwrite GB S", cursive;
+    font-weight: normal; 
+    font-size: x-large;
+}
+
+header {
+    background-color: #171c2d; /* Color oscuro empresarial */
+    color: #eab56f; /* Color dorado */
+    padding: 20px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Estilo del logotipo */
+#logotipo img {
+    border-radius: 50%; /* Logotipo circular */
+    border: 2px solid #eab56f;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra */
+    transition: transform 0.3s ease;
+}
+
+#logotipo img:hover {
+    transform: rotate(5deg) scale(1.1); /* Efecto de rotación y zoom */
+}
+
+/* Estilo del texto principal */
+#letra h1 {
+    font-size: 28px;
+    margin: 0;
+    color: #eab56f;
+    font-family: 'Arial', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+
+/* Estilo de la barra de navegación */
+#nav {
+    display: flex;
+    gap: 20px;
+}
+
+#nav a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #eab56f;
+    font-weight: bold;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    border-bottom: 2px solid transparent;
+}
+
+#nav a:hover {
+    color: #ffffff;
+    border-bottom: 2px solid #eab56f;
+}
+
+/* Línea decorativa debajo del header */
+header hr {
+    width: 100%;
+    border: 1px solid #eab56f;
+    margin-top: 10px;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #nav {
+        flex-direction: column;
+        margin-top: 15px;
+        gap: 10px;
+    }
+
+    #logotipo img {
+        margin-bottom: 10px;
+    }
+}
+
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Color suave de fondo */
+    color: #171c2d; /* Color del texto principal */
+    margin: 0;
+    padding: 0;
+}
+
+
+nav a {
+    color: #eab56f;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #fff; /* Cambio de color en hover */
+}
+
+/* Barra horizontal debajo del encabezado */
+hr {
+    border: 0;
+    border-top: 2px solid #eab56f;
+    margin: 20px 0;
+}
+
+/* Sección principal */
+/* Estilo para el main */
+main {
+    background-color: #f9f9f9;; /* Fondo de contraste */
+    padding: 30px;
+    color: #333; /* Texto claro */
+    font-family: Arial, sans-serif;
+    line-height: 1.8;
+    margin-top: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#letra1 {
+    color: #eab56f; /* Color oscuro para títulos */
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+/* Títulos principales */
+h1 {
+    color: #171c2d; /* Color oscuro para títulos */
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 3px solid #eab56f; /* Línea decorativa dorada debajo del título */
+    padding-bottom: 10px;
+}
+
+/* Párrafos */
+p {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #333;
+    margin-bottom: 30px;
+    text-align: justify;
+    text-justify: inter-word;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+/* Subpárrafos destacados */
+.sub-parrafo {
+    background-color: #272b3e; /* Fondo secundario */
+    padding: 15px;
+    border-left: 5px solid #eab56f;
+    border-radius: 8px;
+    margin: 20px auto;
+}
+
+/* Listas */
+.lista ul {
+    list-style: none;
+    padding: 0;
+    max-width: 900px;
+    margin: 20px auto;
+}
+
+.lista ul li {
+    margin: 8px 0;
+    padding-left: 20px;
+    color: #e0e0e0;
+    position: relative;
+}
+
+.lista ul li:before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #eab56f;
+    font-size: 20px;
+    line-height: 1;
+}
+
+/* Imágenes */
+img {
+    display: block;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Slider de imágenes */
+.slider-frame ul {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    list-style: none;
+    padding: 0;
+    margin: 20px auto;
+}
+
+.slider-frame ul img {
+    border: 3px solid #eab56f;
+    transition: transform 0.3s ease;
+}
+
+.slider-frame ul img:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    background-color: #171c2d;
+    color: #fff;
+    padding: 30px 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-section h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #eab56f;
+    border-bottom: 2px solid #eab56f;
+    padding-bottom: 5px;
+    text-align: left;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+text-align: left;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #ccc;
+}
+
+.footer-section ul li:hover {
+    color: #fff;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        text-align: center;
+    }
+}
+
+#textito1 {
+    font-family: "Playwrite GB S", cursive;
+    font-weight: normal;
+    font-size: larger;
+    background-color: #171c2d;
+    display: flex;
+    align-items: center;
+}
+
+#redes {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: x-large;
+}
+

@@ -1,0 +1,201 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#letra {
+    font-family: "Playwrite GB S", cursive;
+    font-weight: normal; 
+    font-size: x-large;
+}
+
+header {
+    background-color: #171c2d; /* Color oscuro empresarial */
+    color: #eab56f; /* Color dorado */
+    padding: 20px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Estilo del logotipo */
+#logotipo img {
+    border-radius: 50%; /* Logotipo circular */
+    border: 2px solid #eab56f;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra */
+    transition: transform 0.3s ease;
+}
+
+#logotipo img:hover {
+    transform: rotate(5deg) scale(1.1); /* Efecto de rotación y zoom */
+}
+
+/* Estilo del texto principal */
+#letra h1 {
+    font-size: 28px;
+    margin: 0;
+    color: #eab56f;
+    font-family: 'Arial', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+
+/* Estilo de la barra de navegación */
+#nav {
+    display: flex;
+    gap: 20px;
+}
+
+#nav a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #eab56f;
+    font-weight: bold;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    border-bottom: 2px solid transparent;
+}
+
+#nav a:hover {
+    color: #ffffff;
+    border-bottom: 2px solid #eab56f;
+}
+
+/* Línea decorativa debajo del header */
+header hr {
+    width: 100%;
+    border: 1px solid #eab56f;
+    margin-top: 10px;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #nav {
+        flex-direction: column;
+        margin-top: 15px;
+        gap: 10px;
+    }
+
+    #logotipo img {
+        margin-bottom: 10px;
+    }
+}
+
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Color suave de fondo */
+    color: #171c2d; /* Color del texto principal */
+    margin: 0;
+    padding: 0;
+}
+
+
+nav a {
+    color: #eab56f;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #fff; /* Cambio de color en hover */
+}
+
+/* Barra horizontal debajo del encabezado */
+hr {
+    border: 0;
+    border-top: 2px solid #eab56f;
+    margin: 20px 0;
+}
+
+main {
+    background-color: #171c2d;
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    background-color: #171c2d;
+    color: #fff;
+    padding: 30px 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-section h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #eab56f;
+    border-bottom: 2px solid #eab56f;
+    padding-bottom: 5px;
+    text-align: left;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+text-align: left;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #ccc;
+}
+
+.footer-section ul li:hover {
+    color: #fff;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        text-align: center;
+    }
+}
+
+#textito1 {
+    font-family: "Playwrite GB S", cursive;
+    font-weight: normal;
+    font-size: larger;
+    background-color: #171c2d;
+    display: flex;
+    align-items: center;
+}
+
+#redes {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: x-large;
+}
+

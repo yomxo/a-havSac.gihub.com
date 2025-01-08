@@ -1,0 +1,300 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#letra {
+    font-family: "Playwrite GB S", cursive;
+    font-weight: normal; 
+    font-size: x-large;
+}
+
+header {
+    background-color: #171c2d; /* Color oscuro empresarial */
+    color: #eab56f; /* Color dorado */
+    padding: 20px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Estilo del logotipo */
+#logotipo img {
+    border-radius: 50%; /* Logotipo circular */
+    border: 2px solid #eab56f;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra */
+    transition: transform 0.3s ease;
+}
+
+#logotipo img:hover {
+    transform: rotate(5deg) scale(1.1); /* Efecto de rotación y zoom */
+}
+
+/* Estilo del texto principal */
+#letra h1 {
+    font-size: 28px;
+    margin: 0;
+    color: #eab56f;
+    font-family: 'Arial', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+
+/* Estilo de la barra de navegación */
+#nav {
+    display: flex;
+    gap: 20px;
+}
+
+#nav a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #eab56f;
+    font-weight: bold;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    border-bottom: 2px solid transparent;
+}
+
+#nav a:hover {
+    color: #ffffff;
+    border-bottom: 2px solid #eab56f;
+}
+
+/* Línea decorativa debajo del header */
+header hr {
+    width: 100%;
+    border: 1px solid #eab56f;
+    margin-top: 10px;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #nav {
+        flex-direction: column;
+        margin-top: 15px;
+        gap: 10px;
+    }
+
+    #logotipo img {
+        margin-bottom: 10px;
+    }
+}
+
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Color suave de fondo */
+    color: #171c2d; /* Color del texto principal */
+    margin: 0;
+    padding: 0;
+}
+
+
+nav a {
+    color: #eab56f;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #fff; /* Cambio de color en hover */
+}
+
+/* Barra horizontal debajo del encabezado */
+hr {
+    border: 0;
+    border-top: 2px solid #eab56f;
+    margin: 20px 0;
+}
+main {
+    background-color: #f9f9f9;
+    padding: 40px;
+    margin-top: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+/* Presentación y Títulos */
+#presentacion h1 {
+    color: #171c2d; /* Color oscuro para títulos */
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 3px solid #eab56f; /* Línea decorativa dorada debajo del título */
+    padding-bottom: 10px;
+}
+
+/* Párrafos */
+.parrafo p {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #333;
+    margin-bottom: 30px;
+    text-align: justify;
+    text-justify: inter-word;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+/* Fondo de la imagen */
+main img {
+    width: 100%;
+    max-width: 400px;
+    margin: 30px auto;
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+/* Clientes - Mostrar 2x2 y Centrado */
+#clientes1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas de igual tamaño */
+    gap: 30px; /* Espaciado entre las imágenes */
+    margin-top: 40px;
+    justify-items: center; /* Centrar las imágenes dentro de las celdas */
+    align-items: center; /* Centrar las imágenes verticalmente */
+    max-width: 600px; /* Limitar el ancho del contenedor */
+    margin-left: auto; /* Centrar horizontalmente el contenedor */
+    margin-right: auto; /* Centrar horizontalmente el contenedor */
+}
+
+#clientes1 img {
+    width: 150px; /* Ancho fijo de las imágenes */
+    height: 150px; /* Alto fijo para mantener la relación cuadrada */
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efecto hover */
+}
+
+#clientes1 img:hover {
+    transform: scale(1.1); /* Aumentar tamaño al hacer hover */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); /* Sombra más fuerte al hacer hover */
+}
+
+.slider-frame ul {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    list-style: none;
+    padding: 0;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas de igual tamaño */
+    gap: 30px; /* Espaciado entre las imágenes */
+    margin-top: 40px;
+    justify-items: center; /* Centrar las imágenes dentro de las celdas */
+    align-items: center; /* Centrar las imágenes verticalmente */
+    max-width: 600px; /* Limitar el ancho del contenedor */
+    margin-left: auto; /* Centrar horizontalmente el contenedor */
+    margin-right: auto; /* Centrar horizontalmente el contenedor */
+}
+
+.slider-frame ul img {
+    border: 3px solid #eab56f;
+    transition: transform 0.3s ease;
+}
+
+.slider-frame ul img:hover {
+    transform: scale(1.1);
+}
+/* Adicionales */
+hr {
+    border: 1px solid #eab56f; /* Línea dorada para separar secciones */
+    margin: 40px 0;
+}
+footer {
+    background-color: #171c2d;
+    color: #fff;
+    padding: 30px 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-section h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #eab56f;
+    border-bottom: 2px solid #eab56f;
+    padding-bottom: 5px;
+    text-align: left;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+text-align: left;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #ccc;
+}
+
+.footer-section ul li:hover {
+    color: #fff;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        text-align: center;
+    }
+}
+
+#textito1 {
+    font-family: "Playwrite GB S", cursive;
+    font-weight: normal;
+    font-size: larger;
+    background-color: #171c2d;
+    display: flex;
+    align-items: center;
+}
+
+#redes {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: x-large;
+}
+
